@@ -1,2 +1,2 @@
 # Hello world
-## This is my super cool project about the BEST CS EVER yeap
+## This is my super cool project about the BEST CS EVER
