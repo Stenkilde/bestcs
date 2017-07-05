@@ -25,7 +25,7 @@ class VideoView extends Component {
                             this.props.video.vods.urls.map((vod, index) => {
                                 return (
                                     <TabContent for={vod.game} key={index} className="tabContent">
-                                        <iframe src={'https://www.youtube.com/embed/' + vod.url + '?rel=0&amp;showinfo=0'} frameBorder="0" allowFullScreen></iframe>
+                                        <iframe title={vod.url} src={'https://www.youtube.com/embed/' + vod.url + '?rel=0&amp;showinfo=0'} frameBorder="0" allowFullScreen></iframe>
                                     </TabContent>
                                 );
                             })
