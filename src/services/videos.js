@@ -6,7 +6,7 @@ var request = require('./request.js');
  * @returns {axios.Promise|Promise.<T>|*}
  */
 function collection() {
-    return request.get('http://localhost:8000/videos')
+    return request.get('http://api.loungedinosaur.dk/videos')
         .then(function(response) {
             return {
                 collection: response
@@ -15,7 +15,7 @@ function collection() {
 }
 
 function get(title) {
-    return request.get('http://localhost:8000/video?title=' + title)
+    return request.get('http://api.loungedinosaur.dk/video?title=' + title)
         .then(function(response) {
             return {
                 video: response
@@ -24,7 +24,7 @@ function get(title) {
 }
 
 function typeahead(search) {
-    return request.get('http://localhost:8000/typeahead?search=' + search)
+    return request.get('http://api.loungedinosaur.dk/typeahead?search=' + search)
         .then(function(response) {
             return {
                 search: response
